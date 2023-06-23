@@ -1,0 +1,84 @@
+textarea {
+    min-height: 400px;
+}
+
+.email-row, .email-header{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    column-gap: 10px;
+    padding: 10px 10px;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.email-row{
+    font-size: 10px;
+    cursor: pointer;
+    border-bottom: solid #ccc;
+}
+
+.email-header{
+    font-size: 12px;
+    border-bottom: solid #333;
+    font-weight: 500;
+}
+
+.email-row:hover{
+    background-color: #f8f9fa;
+}
+
+.read:hover{
+    background-color: #dfe0e1;
+}
+
+.email-subject{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.email-body{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+.email-address{
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-time{
+    /* margin-left: auto; */
+    font-weight: 400;
+}
+
+.read{
+    background-color: #eee;
+}
+
+#compose-form .btn {
+    margin-top: 10px;
+}
+
+.email-header-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.email-header-info p{
+    margin-bottom: 0;
+}
+
+.email-header-info strong{
+    font-weight: 700;
+}
+
+.email-buttons{
+    display: flex;
+    gap: 5px;
+}
